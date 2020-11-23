@@ -101,7 +101,7 @@ public class SimpleLoginStepDefs {
 
     public void WRONG_USER () {
 
-        String Why = Reason;
+        String Why = "Reason";
         int num =2;
 
     }
