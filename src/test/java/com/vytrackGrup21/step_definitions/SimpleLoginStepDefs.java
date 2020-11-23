@@ -1,6 +1,5 @@
 package com.vytrackGrup21.step_definitions;
 
-import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.pages.LoginPage;
 import com.vytrackGrup21.utilities.BrowserUtils;
 import com.vytrackGrup21.utilities.ConfigurationReader;
@@ -97,8 +96,13 @@ public class SimpleLoginStepDefs {
         Assert.assertEquals("Dashboard",actual);
     }
 
+// Lets try a commit and PUSH without UPDATE!
 
+    public void WRONG_USER {
 
+        String NEDEN = Reason;
+
+    }
 
 
 
