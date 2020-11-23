@@ -90,7 +90,7 @@ public class SimpleLoginStepDefs {
     }
 
     @Then("Store Manager see Dashboard page")
-    public void  cok_YANLIS222_store_Manager_see_Dashboard_page() {
+    public void  cok_YANLIS333_store_Manager_see_Dashboard_page() {
         //Dashboard dashboard = new Dashboard();
         System.out.println(Driver.get().getTitle());
         String actual =Driver.get().getTitle();
