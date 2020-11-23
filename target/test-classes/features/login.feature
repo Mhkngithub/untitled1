@@ -21,7 +21,7 @@ Feature: login
     Then the user should be able to login "Dashboard" page
 
 
- @Smp1
+ @Smp2
   Scenario: simple Driver login
     Given user on the login page
     When Driver login with valid credantial
@@ -32,7 +32,7 @@ Feature: login
       When Sales Manager login with valid credantial
       Then Sales Manager see Dashboard page
 
-@Smp3
+@Smp2
   Scenario: simple store_manager login
     Given user on the login page
     When Store Manager login with valid credantial

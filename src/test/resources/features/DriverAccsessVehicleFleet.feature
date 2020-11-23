@@ -5,7 +5,7 @@ Feature: As a truck driver ı should be able to accsess Vehicle under Fleet tab
     Given user on the login page
     When "driver" login with valid userName and password
 
-   @SC2
+   @Sc4
   Scenario: Driver navigate vehicle under fleet tab
 
 
