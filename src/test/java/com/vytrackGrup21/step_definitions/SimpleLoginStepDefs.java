@@ -88,6 +88,14 @@ public class SimpleLoginStepDefs {
         Assert.assertEquals("Dashboard",actual);
     }
 
+    @Then("Store Manager see Dashboard page")
+    public void YANLIS_store_Manager_see_Dashboard_page() {
+        //Dashboard dashboard = new Dashboard();
+        System.out.println(Driver.get().getTitle());
+        String actual =Driver.get().getTitle();
+        BrowserUtils.waitFor(1);
+        Assert.assertEquals("Dashboard",actual);
+    }
 
 
 
