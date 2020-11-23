@@ -19,9 +19,9 @@ public class loginPageStepDefs {
     @Given("user on the login page")
     public void user_on_the_login_page() {
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+       // WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
         Driver.get().get(ConfigurationReader.get("url"));
-        BrowserUtils.waitFor(2);
+        //BrowserUtils.waitFor(2);
 
 
         //String url = ConfigurationReader.get("url");

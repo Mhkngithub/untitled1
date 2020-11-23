@@ -3,50 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7757493200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user on the login page",
-            "match": {
-              "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5768910900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "\"driver\" login with valid userName and password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"driver\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.login_with_valid_userName_and_password(java.lang.String)"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-23T00:18:37.800Z",
+        "start_timestamp": "2020-11-23T13:52:03.523Z",
         "before": [
           {
             "result": {
-              "duration": 1002400,
+              "duration": 2001400,
               "status": "passed"
             },
             "match": {
@@ -54,14 +15,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "Driver navigate vehicle under fleet tab",
+        "line": 25,
+        "name": "simple Driver login",
         "description": "",
-        "id": "as-a-truck-driver-ı-should-be-able-to-accsess-vehicle-under-fleet-tab;driver-navigate-vehicle-under-fleet-tab",
+        "id": "login;simple-driver-login",
         "after": [
           {
             "result": {
-              "duration": 744244700,
+              "duration": 823847400,
               "status": "passed"
             },
             "match": {
@@ -74,69 +35,53 @@
         "steps": [
           {
             "result": {
-              "duration": 2020701300,
+              "duration": 7144821300,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user on \"Dashboard\"",
+            "line": 26,
+            "name": "user on the login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 8
-                }
-              ],
-              "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.user_on(java.lang.String)"
+              "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4186151700,
+              "duration": 28659699900,
               "status": "passed"
             },
-            "line": 13,
-            "name": "driver clic \"Fleet\" tab and \"Vehicles\" module",
+            "line": 27,
+            "name": "Driver login with valid credantial",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Fleet\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"Vehicles\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.driver_clic_tab_and_module(java.lang.String,java.lang.String)"
+              "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.driver_login_with_valid_credantial()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2000992600,
+              "duration": 20476000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "should be see all vehicle information on page",
+            "line": 28,
+            "name": "Driver Should see Dashboard page",
             "match": {
-              "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.should_be_see_all_vehicle_information_on_page()"
+              "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.driver_Should_see_Dashboard_page()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SC2"
+            "name": "@Smp1"
           }
         ]
       }
     ],
-    "name": "As a truck driver ı should be able to accsess Vehicle under Fleet tab",
+    "name": "login",
     "description": "",
-    "id": "as-a-truck-driver-ı-should-be-able-to-accsess-vehicle-under-fleet-tab",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DriverAccsessVehicleFleet.feature",
+    "uri": "file:src/test/resources/features/login.feature",
     "tags": []
   }
 ]
