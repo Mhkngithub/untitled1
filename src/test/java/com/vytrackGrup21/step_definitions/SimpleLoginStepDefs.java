@@ -45,6 +45,7 @@ public class SimpleLoginStepDefs {
         System.out.println(Driver.get().getTitle());
         String actual =Driver.get().getTitle();
         Assert.assertEquals("Dashboard",actual);
+
     }
 
 
@@ -88,7 +89,7 @@ public class SimpleLoginStepDefs {
     }
 
     @Then("Store Manager see Dashboard page")
-    public void YANLIS_store_Manager_see_Dashboard_page() {
+    public void  cok_YANLIS1234_store_Manager_see_Dashboard_page() {
         //Dashboard dashboard = new Dashboard();
         System.out.println(Driver.get().getTitle());
         String actual =Driver.get().getTitle();
