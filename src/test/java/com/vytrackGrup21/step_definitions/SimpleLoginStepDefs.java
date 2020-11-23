@@ -99,9 +99,10 @@ public class SimpleLoginStepDefs {
 
 // Lets try a commit and PUSH without UPDATE!
 
-    public void WRONG_USER {
+    public void WRONG_USER () {
 
-        String NEDEN = Reason;
+        String Why = Reason;
+        int num =2;
 
     }
 
