@@ -29,6 +29,25 @@ public class SimpleLoginStepDefs {
         Assert.assertEquals("Dashboard",actual);
     }
 
+    @When("Driver login with valid credantial")
+    public void driver_login_with_valid_credantialH1() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.userName.sendKeys(ConfigurationReader.get("driver_username"));
+        BrowserUtils.waitFor(1);
+        loginPage.password.sendKeys(ConfigurationReader.get("driver_password"));
+        loginPage.loginButton.click();
+        //Bu da benim code
+    }
+
+    @Then("Driver Should see Dashboard page")
+    public void driver_Should_see_Dashboard_pageH2() {
+
+        //Dashboard dashboard = new Dashboard();
+        System.out.println(Driver.get().getTitle());
+        String actual =Driver.get().getTitle();
+        Assert.assertEquals("Dashboard",actual);
+    }
+
 
 
 }
