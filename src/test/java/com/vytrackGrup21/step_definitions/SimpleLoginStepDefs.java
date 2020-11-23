@@ -97,7 +97,7 @@ public class SimpleLoginStepDefs {
         Assert.assertEquals("Dashboard",actual);
     }
 
-// Lets try a commit and PUSH without UPDATE!
+// Lets try a commit and PUSH without UPDATE! TESTER1
 
     public void WRONG_USER () {
 
