@@ -85,10 +85,34 @@ formatter.result({
 });
 formatter.step({
   "name": "\"userType\" click any car,should be display general information",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.click_any_car_should_be_display_general_information(java.lang.String)"
+  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.click_any_car_should_be_display_general_information(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

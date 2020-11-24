@@ -16,10 +16,7 @@ import java.util.List;
 
 public class DriverAccessVehicleFleetStepDefs {
 
-  //  @When("{string} press {string} tab {string} module should be see all information")
-  //  public void press_tab_module_should_be_see_all_information(String driver, String Fleet, String Vehicles) {
 
-   // }
    @When("{string} press {string} tab {string} module should be see all information")
    public void press_tab_module_should_be_see_all_information(String driver, String tag, String module,
                                                               List<String> expectedColumnsName) throws InterruptedException {
@@ -37,26 +34,34 @@ public class DriverAccessVehicleFleetStepDefs {
 
        System.out.println("expected:"+expectedColumnsName);
 
-        Thread.sleep(12000);
+        Thread.sleep(2000);
        List<String> actualColumnsName = BrowserUtils.getElementsText(new Dashboard().ColumnsName);
 
        System.out.println("actualStringSize:"+actualColumnsName.size());
        System.out.println("actual:"+actualColumnsName.toString());
 
-
-
-
-
-
+    //Assert.assertEquals(expectedColumnsName,actualColumnsName);
 
    }
 
-
-
-
-
     @When("{string} click any car,should be display general information")
-    public void click_any_car_should_be_display_general_information(String string) {
+    public void click_any_car_should_be_display_general_information(String string,List<String>expectedCarGeneralInformtion) {
+
+       Dashboard dashboard = new Dashboard();
+       dashboard.ClickPoint.click();
+       BrowserUtils.waitFor(1);
+
+        System.out.println("expected:"+expectedCarGeneralInformtion.size());
+        System.out.println(expectedCarGeneralInformtion.toString());
+        BrowserUtils.waitFor(6);
+
+        List<String> actualCarGenerlInformation = BrowserUtils.getElementsText(dashboard.CarGeneralInformanion);
+
+        System.out.println("actual List size: "+ actualCarGenerlInformation.size());
+
+        Assert.assertEquals(expectedCarGeneralInformtion,actualCarGenerlInformation);
+        System.out.println("actualCarGeneralInformtion size :"+ actualCarGenerlInformation.size());
+        System.out.println("actual:"+actualCarGenerlInformation.toString());
 
     }
 

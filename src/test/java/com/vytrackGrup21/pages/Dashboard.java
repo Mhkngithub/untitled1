@@ -12,7 +12,7 @@ public class Dashboard extends BasePage{
 
 
 
-    @FindBy (xpath = "//span[@class='grid-header-cell__label']")
+    @FindBy (xpath = "//th")
     public List<WebElement> ColumnsName;
 
     @FindBy(xpath = "//span[@class='title title-level-1'][1]")
@@ -20,6 +20,12 @@ public class Dashboard extends BasePage{
 
     @FindBy(xpath = "//span[@class='title title-level-2'][1]")
     public WebElement VehiclesModule;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[2]")
+    public WebElement ClickPoint;
+
+    @FindBy(xpath = "//label")
+    public List<WebElement>CarGeneralInformanion;
 
 
     public void navigateToModule (String tab, String module ){

@@ -31,6 +31,30 @@ Feature: As a truck driver I should be able to access Vehicle under Fleet module
 
 
     When "userType" click any car,should be display general information
+      | License Plate             |
+      | Tags                      |
+      | Driver                    |
+      | Location                  |
+      | Chassis Number            |
+      | Model Year                |
+      | Last Odometer             |
+      | Immatriculation Date      |
+      | First Contract Date       |
+      | Catalog Value (VAT Incl.) |
+      | Seats Number              |
+      | Doors Number              |
+      | Color                     |
+      | Transmission              |
+      | Fuel Type                 |
+      | CO2 Emissions             |
+      | Horsepower                |
+      | Horsepower Taxation       |
+      | Power (KW)                |
+      | Logo                      |
+      | Vehicle Model             |
+      | Vehicle Make              |
+
+
     And "userType" can add Event, it should display under Activity tab and General information page as well.
     Then "userType" can reset the setting
 

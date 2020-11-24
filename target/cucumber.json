@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6202330800,
+              "duration": 6613248100,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 6637821400,
+              "duration": 11532712200,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 24000500,
+              "duration": 22996100,
               "status": "passed"
             },
             "line": 7,
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-24T15:19:32.494Z",
+        "start_timestamp": "2020-11-24T18:51:28.157Z",
         "before": [
           {
             "result": {
-              "duration": 2299900,
+              "duration": 2001700,
               "status": "passed"
             },
             "match": {
@@ -67,7 +67,7 @@
         "after": [
           {
             "result": {
-              "duration": 765018900,
+              "duration": 944728300,
               "status": "passed"
             },
             "match": {
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25493692400,
+              "duration": 16491742200,
               "status": "passed"
             },
             "line": 11,
@@ -203,6 +203,7 @@
           },
           {
             "result": {
+              "duration": 7736720300,
               "status": "passed"
             },
             "line": 33,
@@ -214,16 +215,128 @@
                   "offset": 0
                 }
               ],
-              "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.click_any_car_should_be_display_general_information(java.lang.String)"
+              "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.click_any_car_should_be_display_general_information(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate"
+                ]
+              },
+              {
+                "cells": [
+                  "Tags"
+                ]
+              },
+              {
+                "cells": [
+                  "Driver"
+                ]
+              },
+              {
+                "cells": [
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "Chassis Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Model Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Last Odometer"
+                ]
+              },
+              {
+                "cells": [
+                  "Immatriculation Date"
+                ]
+              },
+              {
+                "cells": [
+                  "First Contract Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Catalog Value (VAT Incl.)"
+                ]
+              },
+              {
+                "cells": [
+                  "Seats Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Doors Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Color"
+                ]
+              },
+              {
+                "cells": [
+                  "Transmission"
+                ]
+              },
+              {
+                "cells": [
+                  "Fuel Type"
+                ]
+              },
+              {
+                "cells": [
+                  "CO2 Emissions"
+                ]
+              },
+              {
+                "cells": [
+                  "Horsepower"
+                ]
+              },
+              {
+                "cells": [
+                  "Horsepower Taxation"
+                ]
+              },
+              {
+                "cells": [
+                  "Power (KW)"
+                ]
+              },
+              {
+                "cells": [
+                  "Logo"
+                ]
+              },
+              {
+                "cells": [
+                  "Vehicle Model"
+                ]
+              },
+              {
+                "cells": [
+                  "Vehicle Make"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 987400,
+              "duration": 996300,
               "status": "passed"
             },
-            "line": 34,
+            "line": 58,
             "name": "\"userType\" can add Event, it should display under Activity tab and General information page as well.",
             "match": {
               "arguments": [
@@ -238,10 +351,10 @@
           },
           {
             "result": {
-              "duration": 1001400,
+              "duration": 1000500,
               "status": "passed"
             },
-            "line": 35,
+            "line": 59,
             "name": "\"userType\" can reset the setting",
             "match": {
               "arguments": [
