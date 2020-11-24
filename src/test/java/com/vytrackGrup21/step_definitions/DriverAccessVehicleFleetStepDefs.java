@@ -7,32 +7,61 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DriverAccessVehicleFleetStepDefs {
 
-   Dashboard dashboard = new Dashboard();
+  //  @When("{string} press {string} tab {string} module should be see all information")
+  //  public void press_tab_module_should_be_see_all_information(String driver, String Fleet, String Vehicles) {
 
-    @Given("user on {string}")
-    public void user_on(String string) {
-        BrowserUtils.waitFor(2);
-        Assert.assertEquals(string,Driver.get().getTitle());
+   // }
+   @When("{string} press {string} tab {string} module should be see all information")
+   public void press_tab_module_should_be_see_all_information(String driver, String username, String password,
+                                                              List<String> expectedColumnsName) throws InterruptedException {
+
+    Dashboard dashboard =new Dashboard();
+    dashboard.FleetTag.click();
+    BrowserUtils.waitForVisibility(dashboard.VehiclesModule,1);
+    dashboard.VehiclesModule.click();
+    BrowserUtils.waitForPageToLoad(1);
+
+       System.out.println("expected:"+expectedColumnsName);
+
+
+      List<String> actualColumnsName = BrowserUtils.getElementsText(dashboard.CoulumnsName);
+
+       System.out.println("size:"+actualColumnsName.size());
+       System.out.println("actual:"+actualColumnsName.toString());
+
+
+Thread.sleep(3000);
+
+
+
+
+   }
+
+
+
+
+
+    @When("{string} click any car,should be display general information")
+    public void click_any_car_should_be_display_general_information(String string) {
+
     }
 
-
-    @When("driver clic {string} tab and {string} module")
-    public void driver_clic_tab_and_module(String tab, String module) {
-
-        dashboard.navigateToModule(tab,module);
+    @When("{string} can add Event, it should display under Activity tab and General information page as well.")
+    public void can_add_Event_it_should_display_under_Activity_tab_and_General_information_page_as_well(String string) {
 
     }
 
-    @Then("should be see all vehicle information on page")
-    public void should_be_see_all_vehicle_information_on_page() {
-        BrowserUtils.waitFor(2);
-        System.out.println("burdayım");
+    @Then("{string} can reset the setting")
+    public void can_reset_the_setting(String string) {
+
     }
-
-
-
 
 }

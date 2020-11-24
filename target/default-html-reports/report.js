@@ -1,18 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriverFleetVehiclesModule.feature");
 formatter.feature({
-  "name": "login",
+  "name": "As a truck driver I should be able to access Vehicle under Fleet module.",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "simple Driver login",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Smp2"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -47,98 +42,76 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.after({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "simple salas_manager login",
+  "name": "Fleet tab Vehicle module",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Smp2"
+      "name": "@Sc2"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "user on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Sales Manager login with valid credantial",
+  "name": "\"userType\" press \"Fleet\" tab \"Vehicle\" module should be see all information",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.sales_Manager_login_with_valid_credantial()"
+  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.press_tab_module_should_be_see_all_information(java.lang.String,java.lang.String,java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Sales Manager see Dashboard page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.sales_Manager_see_Dashboard_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "simple store_manager login",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Smp2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Store Manager login with valid credantial",
+  "name": "\"userType\" click any car,should be display general information",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.store_Manager_login_with_valid_credantial()"
+  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.click_any_car_should_be_display_general_information(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Store Manager see Dashboard page",
+  "name": "\"userType\" can add Event, it should display under Activity tab and General information page as well.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.can_add_Event_it_should_display_under_Activity_tab_and_General_information_page_as_well(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"userType\" can reset the setting",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.store_Manager_see_Dashboard_page()"
+  "location": "com.vytrackGrup21.step_definitions.DriverAccessVehicleFleetStepDefs.can_reset_the_setting(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Dashboard]\u003e but was:\u003c[Login]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.store_Manager_see_Dashboard_page(SimpleLoginStepDefs.java:68)\r\n\tat ✽.Store Manager see Dashboard page(file:///C:/Users/greec/untitled1/src/test/resources/features/login.feature:39)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

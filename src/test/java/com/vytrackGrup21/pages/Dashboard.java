@@ -3,8 +3,24 @@ package com.vytrackGrup21.pages;
 import com.vytrackGrup21.utilities.BrowserUtils;
 import com.vytrackGrup21.utilities.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import java.util.List;
 
 public class Dashboard extends BasePage{
+
+
+
+    @FindBy (xpath = "//span[@class='grid-header-cell__label'][@style='']")
+    public List<WebElement> CoulumnsName;
+
+    @FindBy(xpath = "//span[@class='title title-level-1'][1]")
+    public WebElement FleetTag;
+
+    @FindBy(xpath = "//span[@class='title title-level-2'][1]")
+    public WebElement VehiclesModule;
+
 
     public void navigateToModule (String tab, String module ){
 
