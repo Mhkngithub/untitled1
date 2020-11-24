@@ -53,7 +53,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "\"userType\" press \"Fleet\" tab \"Vehicle\" module should be see all information",
+  "name": "\"userType\" press \"Fleet\" tab \"Vehicles\" module should be see all information",
   "rows": [
     {},
     {},

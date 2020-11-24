@@ -1,5 +1,6 @@
 package com.vytrackGrup21.step_definitions;
 
+import com.vytrackGrup21.pages.BasePage;
 import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.utilities.BrowserUtils;
 import com.vytrackGrup21.utilities.Driver;
@@ -20,25 +21,30 @@ public class DriverAccessVehicleFleetStepDefs {
 
    // }
    @When("{string} press {string} tab {string} module should be see all information")
-   public void press_tab_module_should_be_see_all_information(String driver, String username, String password,
+   public void press_tab_module_should_be_see_all_information(String driver, String tag, String module,
                                                               List<String> expectedColumnsName) throws InterruptedException {
 
-    Dashboard dashboard =new Dashboard();
+        Dashboard dashboard =new Dashboard();
     dashboard.FleetTag.click();
     BrowserUtils.waitForVisibility(dashboard.VehiclesModule,1);
     dashboard.VehiclesModule.click();
-    BrowserUtils.waitForPageToLoad(1);
+    Thread.sleep(10000);
+
+       //dashboard.navigateToModule(tag,module);
+
+       System.out.println("sizewebelementlist:"+dashboard.ColumnsName.size());
+
 
        System.out.println("expected:"+expectedColumnsName);
 
+        Thread.sleep(12000);
+       List<String> actualColumnsName = BrowserUtils.getElementsText(new Dashboard().ColumnsName);
 
-      List<String> actualColumnsName = BrowserUtils.getElementsText(dashboard.CoulumnsName);
-
-       System.out.println("size:"+actualColumnsName.size());
+       System.out.println("actualStringSize:"+actualColumnsName.size());
        System.out.println("actual:"+actualColumnsName.toString());
 
 
-Thread.sleep(3000);
+
 
 
 

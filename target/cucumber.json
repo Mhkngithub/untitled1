@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9701559400,
+              "duration": 6202330800,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 21716471400,
+              "duration": 6637821400,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 104002900,
+              "duration": 24000500,
               "status": "passed"
             },
             "line": 7,
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-24T13:41:22.261Z",
+        "start_timestamp": "2020-11-24T15:19:32.494Z",
         "before": [
           {
             "result": {
-              "duration": 2001100,
+              "duration": 2299900,
               "status": "passed"
             },
             "match": {
@@ -67,7 +67,7 @@
         "after": [
           {
             "result": {
-              "duration": 820552500,
+              "duration": 765018900,
               "status": "passed"
             },
             "match": {
@@ -80,11 +80,11 @@
         "steps": [
           {
             "result": {
-              "duration": 3924327400,
+              "duration": 25493692400,
               "status": "passed"
             },
             "line": 11,
-            "name": "\"userType\" press \"Fleet\" tab \"Vehicle\" module should be see all information",
+            "name": "\"userType\" press \"Fleet\" tab \"Vehicles\" module should be see all information",
             "match": {
               "arguments": [
                 {
@@ -96,7 +96,7 @@
                   "offset": 17
                 },
                 {
-                  "val": "\"Vehicle\"",
+                  "val": "\"Vehicles\"",
                   "offset": 29
                 }
               ],
@@ -203,7 +203,6 @@
           },
           {
             "result": {
-              "duration": 998800,
               "status": "passed"
             },
             "line": 33,
@@ -221,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 1000400,
+              "duration": 987400,
               "status": "passed"
             },
             "line": 34,
@@ -239,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 994600,
+              "duration": 1001400,
               "status": "passed"
             },
             "line": 35,

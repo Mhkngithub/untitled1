@@ -12,8 +12,8 @@ public class Dashboard extends BasePage{
 
 
 
-    @FindBy (xpath = "//span[@class='grid-header-cell__label'][@style='']")
-    public List<WebElement> CoulumnsName;
+    @FindBy (xpath = "//span[@class='grid-header-cell__label']")
+    public List<WebElement> ColumnsName;
 
     @FindBy(xpath = "//span[@class='title title-level-1'][1]")
     public WebElement FleetTag;
@@ -29,7 +29,7 @@ public class Dashboard extends BasePage{
 
 
         BrowserUtils.waitFor(3);
-        Driver.get().findElement(By.xpath("//span[normalize-space(text())='"+module+"' and contains(@class, 'title title-level-2')]")).click();
+        Driver.get().findElement(By.xpath("//span[normalize-space(text())='" + module + "' and contains(@class, 'title title-level-2')]")).click();
         BrowserUtils.waitFor(1);
     }
 

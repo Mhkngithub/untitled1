@@ -8,7 +8,7 @@ Feature: As a truck driver I should be able to access Vehicle under Fleet module
   @Sc2
   Scenario:Fleet tab Vehicle module
 
-    When "userType" press "Fleet" tab "Vehicle" module should be see all information
+    When "userType" press "Fleet" tab "Vehicles" module should be see all information
       | License Plat         |
       | Tags                 |
       | Driver               |
