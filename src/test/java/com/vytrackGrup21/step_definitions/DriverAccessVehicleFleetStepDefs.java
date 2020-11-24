@@ -9,7 +9,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
+import javax.swing.*;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +26,8 @@ public class DriverAccessVehicleFleetStepDefs {
 
         Dashboard dashboard =new Dashboard();
     dashboard.FleetTag.click();
-    BrowserUtils.waitForVisibility(dashboard.VehiclesModule,1);
+    BrowserUtils.waitForVisibility(dashboard.VehiclesModule,3);
+    Thread.sleep(3000);
     dashboard.VehiclesModule.click();
     Thread.sleep(10000);
 
@@ -45,11 +49,12 @@ public class DriverAccessVehicleFleetStepDefs {
    }
 
     @When("{string} click any car,should be display general information")
-    public void click_any_car_should_be_display_general_information(String string,List<String>expectedCarGeneralInformtion) {
+    public void click_any_car_should_be_display_general_information(String string,List<String>expectedCarGeneralInformtion) throws InterruptedException {
 
        Dashboard dashboard = new Dashboard();
+       BrowserUtils.waitFor(5);
        dashboard.ClickPoint.click();
-       BrowserUtils.waitFor(1);
+       Thread.sleep(4000);
 
         System.out.println("expected:"+expectedCarGeneralInformtion.size());
         System.out.println(expectedCarGeneralInformtion.toString());
@@ -67,6 +72,27 @@ public class DriverAccessVehicleFleetStepDefs {
 
     @When("{string} can add Event, it should display under Activity tab and General information page as well.")
     public void can_add_Event_it_should_display_under_Activity_tab_and_General_information_page_as_well(String string) {
+/*
+       Dashboard dashboard = new Dashboard();
+       dashboard.AddEventButton.click();
+       BrowserUtils.waitFor(1);
+
+       dashboard.EventTitle.sendKeys("Mustang alıyoruz");
+       dashboard.EventDescription.sendKeys("Mustangı  fıstık yesılı alacagız");
+       dashboard.EventColor.click();
+       dashboard.EventGuest.click();
+       BrowserUtils.waitFor(2);
+        Actions action = new Actions(Driver.get());
+        BrowserUtils.waitFor(2);
+        action.moveToElement(dashboard.EventGuestDriverTruck).perform();
+        dashboard.EventRemanderAdd.click();
+        new Select(dashboard.EventRemanderAddMail).getFirstSelectedOption().click();
+        BrowserUtils.waitFor(1);
+        dashboard.EventRemanderMinuteBox.sendKeys("10");
+        new Select(dashboard.EventRemanderAddMinute).getFirstSelectedOption().click();
+        BrowserUtils.waitFor(1);
+
+*/
 
     }
 
