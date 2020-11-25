@@ -2,7 +2,9 @@ package com.vytrackGrup21.step_definitions;
 
 import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.utilities.BrowserUtils;
+import com.vytrackGrup21.utilities.Driver;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class StoreManagerCreateVehicleStep_Defs {
 
@@ -10,11 +12,11 @@ public class StoreManagerCreateVehicleStep_Defs {
     public void store_manager_should_be_able_to_create_and_cancel_car() throws InterruptedException {
         Dashboard dashboard = new Dashboard();
 
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(9);
         dashboard.CreateCarButton.click();
         BrowserUtils.waitFor(5);
 
-        dashboard.LicancePlateBox.sendKeys("illa mustang istiyporuz");
+        dashboard.LicancePlateBox.sendKeys("illa mustang istiyoruz");
         BrowserUtils.waitFor(4);
 
         dashboard.TagConvertableChosen.click();
@@ -22,21 +24,31 @@ public class StoreManagerCreateVehicleStep_Defs {
         System.out.println(dashboard.TagConvertableChosen.isSelected());
 
         dashboard.ImmatriculationDate.sendKeys("Jan 10, 2020");
-        Thread.sleep(5000);
+        Thread.sleep(9000);
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+
+        jse.executeScript("window.scrollBy(0,200)");
 
         /*Select select = new Select(dashboard.Transmission);
         select.selectByValue("Automatic");
         System.out.println("selectObject:"+ select.getFirstSelectedOption().getText());
 */
 
-        dashboard.TransmissionBlok.click();
-        BrowserUtils.waitFor(2);
-        dashboard.Automatic.click();
-        BrowserUtils.waitFor(2);
 
-        dashboard.FeulType.click();
+        jse.executeScript("arguments[0].click()", dashboard.TransmissionBlok);
+
+       // BrowserUtils.waitForClickablility(dashboard.TransmissionBlok, 15);
+       // dashboard.TransmissionBlok.click();
+        BrowserUtils.waitFor(5);
+        dashboard.Automatic.click();
+        BrowserUtils.waitFor(5);
+
+        jse.executeScript("arguments[0].click()", dashboard.FeulType);
+        //dashboard.FeulType.click();
         BrowserUtils.waitFor(2);
         dashboard.Hybrid.click();
+        BrowserUtils.waitFor(3);
+        dashboard.saveAndSubmit.click();
         BrowserUtils.waitFor(3);
 
     }

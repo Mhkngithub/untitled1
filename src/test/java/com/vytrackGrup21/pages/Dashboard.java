@@ -33,6 +33,11 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "//div[@class='oro-clearfix'][1]/input")
   public WebElement TagConvertableChosen;
 
+  @FindBy(xpath = " //input[@value='sedan']")
+  public WebElement TagConvertableChosen7;
+
+
+
   @FindBy(xpath = "(//input[@data-validation='{\"Date\":{}}'])[1]")
   public WebElement ImmatriculationDate;
 
@@ -57,9 +62,11 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "(//button[@class='btn btn-medium add-btn'])[2]")
   public WebElement VehicleMakeButton;
 
+  @FindBy(xpath = "//button[@class='btn btn-success action-button']")
+  public WebElement saveAndSubmit;
 
 
-
+/*
 
 
    /* public void navigateToModule (String tab, String module ){
@@ -68,9 +75,9 @@ public class Dashboard extends BasePage{
                                            //span[normalize-space()='Vehicles' and contains(@class, 'title title-level-1') ]
 
 
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(5);
         Driver.get().findElement(By.xpath("//span[normalize-space(text())='" + module + "' and contains(@class, 'title title-level-2')]")).click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(5);
     }
 */
 
