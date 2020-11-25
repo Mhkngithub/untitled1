@@ -3,7 +3,6 @@ package com.vytrackGrup21.step_definitions;
 import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.Select;
 
 public class StoreManagerCreateVehicleStep_Defs {
 
@@ -37,13 +36,8 @@ public class StoreManagerCreateVehicleStep_Defs {
 
         dashboard.FeulType.click();
         BrowserUtils.waitFor(2);
-        Select select= new Select(dashboard.FeulType);
-        BrowserUtils.waitFor(2);
-        select.selectByValue("Hybrid");
+        dashboard.Hybrid.click();
         BrowserUtils.waitFor(3);
-        System.out.println(select.getFirstSelectedOption().getText());
-        BrowserUtils.waitFor(5);
-
 
     }
 
