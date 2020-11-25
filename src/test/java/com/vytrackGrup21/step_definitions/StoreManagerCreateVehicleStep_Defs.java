@@ -49,11 +49,14 @@ public class StoreManagerCreateVehicleStep_Defs {
         //dashboard.FeulType.click();
         BrowserUtils.waitFor(2);
         dashboard.Hybrid.click();
-        BrowserUtils.waitFor(3);
-        dashboard.saveAndSubmit.click();
+        BrowserUtils.waitFor(5);
+
+        jse.executeScript("arguments[0].click()", dashboard.saveAndSubmit);
+
+        BrowserUtils.waitFor(5);
+        jse.executeScript("arguments[0].click()", dashboard.saveEnd);
         BrowserUtils.waitFor(3);
 
-        dashboard.saveAndSubmit.click();
 
 
 

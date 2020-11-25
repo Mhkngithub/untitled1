@@ -65,8 +65,11 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "(//button[@class='btn btn-medium add-btn'])[2]")
   public WebElement VehicleMakeButton;
 
-  @FindBy(xpath = "//button[@class='btn btn-success action-button']")
+  @FindBy(xpath = "//a[@class='btn-success btn dropdown-toggle']")
   public WebElement saveAndSubmit;
+
+  @FindBy(xpath = "(//button[@class='main-group action-button dropdown-item'])[2]")
+  public WebElement saveEnd;
 
 
 /*
