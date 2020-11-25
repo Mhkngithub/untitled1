@@ -1,8 +1,5 @@
 package com.vytrackGrup21.pages;
 
-import com.vytrackGrup21.utilities.BrowserUtils;
-import com.vytrackGrup21.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -39,8 +36,20 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "(//input[@data-validation='{\"Date\":{}}'])[1]")
   public WebElement ImmatriculationDate;
 
-  @FindBy(xpath = "//div[@id='select2-drop-mask']")
+  @FindBy(xpath = "//span[@class='select2-chosen']")
+  public WebElement TransmissionBlok;
+
+  @FindBy(xpath = "//select[@name='custom_entity_type[Transmission]']")
   public WebElement Transmission;
+
+  @FindBy(xpath = "//option[@value='automatic']")
+  public WebElement Automatic;
+
+  @FindBy(xpath = "//select[@name='custom_entity_type[FuelType]']")
+  public WebElement FeulType;
+
+  @FindBy(xpath = "//option[@value='hybrid']")
+  public WebElement Hybrid;
 
   @FindBy(xpath = "//button[@class='btn btn-medium add-btn']")
   public WebElement VehicleMÖodelButton;

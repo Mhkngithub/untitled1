@@ -25,11 +25,24 @@ public class StoreManagerCreateVehicleStep_Defs {
         dashboard.ImmatriculationDate.sendKeys("Jan 10, 2020");
         Thread.sleep(5000);
 
-        Select select = new Select(dashboard.Transmission);
+        /*Select select = new Select(dashboard.Transmission);
         select.selectByValue("Automatic");
         System.out.println("selectObject:"+ select.getFirstSelectedOption().getText());
+*/
 
+        dashboard.TransmissionBlok.click();
+        BrowserUtils.waitFor(2);
+        dashboard.Automatic.click();
+        BrowserUtils.waitFor(2);
 
+        dashboard.FeulType.click();
+        BrowserUtils.waitFor(2);
+        Select select= new Select(dashboard.FeulType);
+        BrowserUtils.waitFor(2);
+        select.selectByValue("Hybrid");
+        BrowserUtils.waitFor(3);
+        System.out.println(select.getFirstSelectedOption().getText());
+        BrowserUtils.waitFor(5);
 
 
     }
