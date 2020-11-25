@@ -26,15 +26,9 @@ public class DriverAccessVehicleFleetStepDefs {
                                                               List<String> expectedColumnsName) throws InterruptedException {
 
         Dashboard dashboard =new Dashboard();
-        Thread.sleep(12000);
-    dashboard.FleetTag.click();
-    //BrowserUtils.waitForVisibility(dashboard.VehiclesModule,3);
-    Thread.sleep(7000);
-    dashboard.VehiclesModule.click();
-    Thread.sleep(7000);
 
-      // dashboard.navigateToModule(tag,module);
-
+       dashboard.navigateToModule(tag,module);
+       BrowserUtils.waitFor(3);
       /* System.out.println("sizewebelementlist:"+dashboard.ColumnsName.size());
 
 

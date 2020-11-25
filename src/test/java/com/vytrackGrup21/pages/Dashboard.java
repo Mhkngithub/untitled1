@@ -27,6 +27,27 @@ public class Dashboard extends BasePage{
     @FindBy(xpath = "//label")
     public List<WebElement>CarGeneralInformanion;
 
+  @FindBy(xpath = "//a[@class='btn main-group btn-primary pull-right ']")
+  public WebElement CreateCarButton;
+
+  @FindBy(xpath ="//input[@name='custom_entity_type[LicensePlate]']")
+  public  WebElement LicancePlateBox;
+
+  @FindBy(xpath = "//div[@class='oro-clearfix'][1]")
+  public WebElement TagConvertableChosen;
+
+  @FindBy(xpath = "(//input[@data-validation='{\"Date\":{}}'])[1]")
+  public WebElement ImmatriculationDate;
+
+  @FindBy(xpath = "//div[@id='select2-drop-mask']")
+  public WebElement Transmission;
+
+  @FindBy(xpath = "//button[@class='btn btn-medium add-btn']")
+  public WebElement VehicleMÖodelButton;
+
+  @FindBy(xpath = "(//button[@class='btn btn-medium add-btn'])[2]")
+  public WebElement VehicleMakeButton;
+
 
 
 
