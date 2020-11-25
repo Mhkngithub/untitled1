@@ -16,6 +16,8 @@ public class StoreManagerCreateVehicleStep_Defs {
         dashboard.CreateCarButton.click();
         BrowserUtils.waitFor(5);
 
+        Driver.get().manage().window().maximize();
+
         dashboard.LicancePlateBox.sendKeys("illa mustang istiyoruz");
         BrowserUtils.waitFor(4);
 
@@ -50,6 +52,10 @@ public class StoreManagerCreateVehicleStep_Defs {
         BrowserUtils.waitFor(3);
         dashboard.saveAndSubmit.click();
         BrowserUtils.waitFor(3);
+
+        dashboard.saveAndSubmit.click();
+
+
 
     }
 

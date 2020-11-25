@@ -56,6 +56,9 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "//option[@value='hybrid']")
   public WebElement Hybrid;
 
+  @FindBy(xpath = "//button[@class='btn btn-success action-button']")
+  public WebElement SaveButton;
+
   @FindBy(xpath = "//button[@class='btn btn-medium add-btn']")
   public WebElement VehicleMÖodelButton;
 
