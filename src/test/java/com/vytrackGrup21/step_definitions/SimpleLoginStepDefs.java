@@ -70,7 +70,7 @@ public class SimpleLoginStepDefs {
         //Dashboard dashboard = new Dashboard();
         System.out.println(Driver.get().getTitle());
         String actual = Driver.get().getTitle();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(5);
         Assert.assertEquals("Dashboard", actual);
     }
 
