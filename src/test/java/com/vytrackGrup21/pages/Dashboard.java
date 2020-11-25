@@ -53,7 +53,7 @@ public class Dashboard extends BasePage{
 
 
 
-    public void navigateToModule (String tab, String module ){
+   /* public void navigateToModule (String tab, String module ){
 
         Driver.get().findElement(By.xpath("//span[normalize-space(text())='" + tab + "' and contains(@class, 'title title-level-1')]")).click();
                                            //span[normalize-space()='Vehicles' and contains(@class, 'title title-level-1') ]
@@ -63,6 +63,6 @@ public class Dashboard extends BasePage{
         Driver.get().findElement(By.xpath("//span[normalize-space(text())='" + module + "' and contains(@class, 'title title-level-2')]")).click();
         BrowserUtils.waitFor(1);
     }
-
+*/
 
 }
