@@ -33,7 +33,7 @@ public class Dashboard extends BasePage{
   @FindBy(xpath ="//input[@name='custom_entity_type[LicensePlate]']")
   public  WebElement LicancePlateBox;
 
-  @FindBy(xpath = "//div[@class='oro-clearfix'][1]")
+  @FindBy(xpath = "//div[@class='oro-clearfix'][1]/input")
   public WebElement TagConvertableChosen;
 
   @FindBy(xpath = "(//input[@data-validation='{\"Date\":{}}'])[1]")
