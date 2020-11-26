@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11195500800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the login page",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37333497400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Driver login with valid credantial",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.driver_login_with_valid_credantial()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33998500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Driver Should see Dashboard page",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.SimpleLoginStepDefs.driver_Should_see_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-26T15:23:38.173Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Fleet Tag Cost Module",
+        "description": "",
+        "id": "as-a-truck-driver-i-should-be-able-to-access-vehicle-costs-page;fleet-tag-cost-module",
+        "after": [
+          {
+            "result": {
+              "duration": 1175731300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c[Type, Total Price, Date]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(FleetCostPageStepDefs.java:24)\r\n\tat ✽.\"driver\" log ın page titles must be seen(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
+              "duration": 20350660800,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "\"driver\" log ın page titles must be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Date"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001300,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "fourth line should include these informations",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.fourth_line_should_include_these_informations(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Type",
+                  "Depreciation and Interests"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Price",
+                  "$25.00"
+                ]
+              },
+              {
+                "cells": [
+                  "Date",
+                  "Jun 3, 2020"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user should invoke page informations",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.user_should_invoke_page_informations()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sc5"
+          }
+        ]
+      }
+    ],
+    "name": "As a truck driver I should be able to access Vehicle Costs page",
+    "description": "",
+    "id": "as-a-truck-driver-i-should-be-able-to-access-vehicle-costs-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FleetCostPage.feature",
+    "tags": []
+  }
+]

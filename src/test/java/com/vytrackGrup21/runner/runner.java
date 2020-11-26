@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/vytrackGrup21/step_definitions",
         dryRun = false,
-        tags ="@Sc4"
+        tags ="@Sc5"
 )
 public class runner {
 }
