@@ -20,10 +20,10 @@ public class FleetCostPageStepDefs {
         BrowserUtils.waitForPageToLoad(8);
 
         List<String> ActualTitleList = BrowserUtils.getElementsText(dashboard.CostTitles);
-
-        Assert.assertEquals(ExpectedCostTitle,ActualTitleList);
         System.out.println("Expected List:"+ ExpectedCostTitle);
         System.out.println("Actual List:"+ ActualTitleList);
+        Assert.assertEquals(ExpectedCostTitle.toString().toLowerCase(),ActualTitleList.toString().toLowerCase());
+
 
     }
 

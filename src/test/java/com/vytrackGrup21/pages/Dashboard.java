@@ -80,7 +80,7 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "//div[contains(text(),'You do not have permission to perform this action')]")
   public WebElement NotPermission;
 
-  @FindBy (xpath = "//span[@class='grid-header-cell__label']")
+  @FindBy (xpath = "//table/thead/tr/th[contains(@class,'grid-header-cell')]")
   public List<WebElement> CostTitles;
 
 
