@@ -10,8 +10,8 @@ import java.util.List;
 
 public class FleetCostPageStepDefs {
 
-    @When("{string} log ın page titles must be seen")
-    public void log_ın_page_titles_must_be_seen(String string, List<String>ExpectedCostTitle) {
+    @When("{string} log in page titles must be seen")
+    public void log_in_page_titles_must_be_seen(String string, List<String>ExpectedCostTitle) {
 
         Dashboard dashboard = new Dashboard();
         dashboard.navigateToModule("Fleet","Vehicle Costs");

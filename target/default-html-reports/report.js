@@ -53,9 +53,8 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "\"driver\" log ın page titles must be seen",
+  "name": "\"driver\" log in page titles must be seen",
   "rows": [
-    {},
     {},
     {},
     {}
@@ -63,10 +62,10 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_in_page_titles_must_be_seen(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c... total price, date, [null]]\u003e but was:\u003c... total price, date, [, , , , ]]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(FleetCostPageStepDefs.java:25)\r\n\tat ✽.\"driver\" log ın page titles must be seen(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[[type, total price, date]]\u003e but was:\u003c[[]]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_in_page_titles_must_be_seen(FleetCostPageStepDefs.java:25)\r\n\tat ✽.\"driver\" log in page titles must be seen(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
   "status": "failed"
 });
 formatter.step({
