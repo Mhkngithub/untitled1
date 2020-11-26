@@ -10,8 +10,9 @@ Feature: login
 
     Examples:
     | userType      | userName        | password    |
+    | driver        | user169         | UserUser123 |
     | store_manager | storemanager213 | UserUser123 |
-    #| driver        | user169         | UserUser123 |
+
     #| sales_manager | salesmanager269 | UserUser123 |
 
 

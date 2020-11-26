@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "com/vytrackGrup21/step_definitions",
-        dryRun = false,
-        tags ="@Sc3"
+        dryRun = true,
+        tags ="@Sc0"
 )
 public class runner {
 }
