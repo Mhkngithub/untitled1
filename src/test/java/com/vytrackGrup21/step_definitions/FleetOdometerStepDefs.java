@@ -11,19 +11,19 @@ public class FleetOdometerStepDefs {
 
 
     @Then("Only valid userType  can access to vehicle odometer page")
-    public void only_valid_userType_can_access_to_vehicle_odometer_page() {
+    public void only_valid_userType_can_access_to_vehicle_odometer_page() throws InterruptedException {
 
         Dashboard dashboard = new Dashboard();
         BrowserUtils.waitFor(8);
         dashboard.navigateToModule("Fleet","Vehicle Odometer");
-
+        Thread.sleep(3000);
         String DashboardActualTitle =  Driver.get().getTitle();
 
         try{
             Assert.assertEquals("Vehicle Odometer - Entities - System - Car - Entities - System",DashboardActualTitle);
             System.out.println("I verifed driver");
         }catch (Exception e){
-            Assert.assertNotEquals("Vehicle Odometer - Entities - System - Car - Entities - System",DashboardActualTitle);
+            Assert.assertTrue(!DashboardActualTitle.equals("\"Vehicle Odometer - Entities - System - Car - Entities - System\""));
             System.out.println("store manager did not access to odometer page");
 
 
