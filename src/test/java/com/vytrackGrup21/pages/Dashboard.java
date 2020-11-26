@@ -77,6 +77,9 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "//div[text()='Entity saved']")
     public WebElement saveNotation;
 
+  @FindBy(xpath = "//div[contains(text(),'You do not have permission to perform this action')]")
+  public WebElement NotPermission;
+
 
 
 
