@@ -4,6 +4,7 @@ import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.utilities.BrowserUtils;
 import com.vytrackGrup21.utilities.Driver;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class StoreManagerCreateVehicleStep_Defs {
@@ -57,8 +58,8 @@ public class StoreManagerCreateVehicleStep_Defs {
         jse.executeScript("arguments[0].click()", dashboard.saveEnd);
         BrowserUtils.waitFor(3);
 
-
-
+        System.out.println("save notation:"+ dashboard.saveNotation.getText());
+        Assert.assertEquals("Entity saved",dashboard.saveNotation.getText());
 
     }
 

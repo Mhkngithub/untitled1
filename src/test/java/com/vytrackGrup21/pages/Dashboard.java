@@ -71,6 +71,10 @@ public class Dashboard extends BasePage{
   @FindBy(xpath = "(//button[@class='main-group action-button dropdown-item'])[2]")
   public WebElement saveEnd;
 
+  @FindBy(xpath = "//div[text()='Entity saved']")
+    public WebElement saveNotation;
+
+
 
 /*
 
