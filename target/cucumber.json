@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-26T09:54:12.438Z",
+        "start_timestamp": "2020-11-26T10:03:26.911Z",
         "before": [
           {
             "result": {
-              "duration": 2000200,
+              "duration": 1996100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 918119500,
+              "duration": 809592600,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6315234600,
+              "duration": 5722260900,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 28270438200,
+              "duration": 5516419100,
               "status": "passed"
             },
             "line": 7,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1028876400,
+              "duration": 1016299500,
               "status": "passed"
             },
             "line": 8,
@@ -91,8 +91,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
-              "duration": 8841167900,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/Windows%2010/IdeaProjects/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+              "duration": 8718557700,
               "status": "failed"
             },
             "line": 9,
@@ -110,11 +110,10 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-26T09:54:57.950Z",
+        "start_timestamp": "2020-11-26T10:03:48.803Z",
         "before": [
           {
             "result": {
-              "duration": 997800,
               "status": "passed"
             },
             "match": {
@@ -129,7 +128,7 @@
         "after": [
           {
             "result": {
-              "duration": 796443900,
+              "duration": 812724300,
               "status": "passed"
             },
             "match": {
@@ -142,7 +141,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5556342000,
+              "duration": 4496900600,
               "status": "passed"
             },
             "line": 6,
@@ -154,7 +153,7 @@
           },
           {
             "result": {
-              "duration": 15226849800,
+              "duration": 5746309000,
               "status": "passed"
             },
             "line": 7,
@@ -180,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 1010095500,
+              "duration": 1008766400,
               "status": "passed"
             },
             "line": 8,
@@ -198,8 +197,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
-              "duration": 15247952000,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/Windows%2010/IdeaProjects/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+              "duration": 8722853100,
               "status": "failed"
             },
             "line": 9,
