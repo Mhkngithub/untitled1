@@ -14,9 +14,9 @@ public class FleetOdometerStepDefs {
     public void only_valid_userType_can_access_to_vehicle_odometer_page() throws InterruptedException {
 
         Dashboard dashboard = new Dashboard();
-        BrowserUtils.waitFor(8);
+        BrowserUtils.waitFor(10);
         dashboard.navigateToModule("Fleet","Vehicle Odometer");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         String DashboardActualTitle =  Driver.get().getTitle();
 
         if (DashboardActualTitle.equals("Dashboard")){
@@ -30,6 +30,5 @@ public class FleetOdometerStepDefs {
             System.out.println("I verifed driver");
             Assert.assertEquals("You do not have permission to perform this action.",dashboard.NotPermission.getText());
     }
-
 
 }

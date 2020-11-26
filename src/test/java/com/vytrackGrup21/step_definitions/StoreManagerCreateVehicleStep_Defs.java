@@ -48,7 +48,7 @@ public class StoreManagerCreateVehicleStep_Defs {
 
         jse.executeScript("arguments[0].click()", dashboard.FeulType);
         //dashboard.FeulType.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
         dashboard.Hybrid.click();
         BrowserUtils.waitFor(5);
 
@@ -56,7 +56,7 @@ public class StoreManagerCreateVehicleStep_Defs {
 
         BrowserUtils.waitFor(5);
         jse.executeScript("arguments[0].click()", dashboard.saveEnd);
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(5);
 
         System.out.println("save notation:"+ dashboard.saveNotation.getText());
         Assert.assertEquals("Entity saved",dashboard.saveNotation.getText());
