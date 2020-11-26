@@ -65,7 +65,7 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c[Type, Total Price, Date]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(FleetCostPageStepDefs.java:24)\r\n\tat ✽.\"driver\" log ın page titles must be seen(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c[TYPE, TOTAL PRICE, DATE]\u003e but was:\u003c[TYPE\nTOTAL PRICE\nDATE]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_ın_page_titles_must_be_seen(FleetCostPageStepDefs.java:24)\r\n\tat ✽.\"driver\" log ın page titles must be seen(file:///C:/Users/Windows%2010/IdeaProjects/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
   "status": "failed"
 });
 formatter.step({
