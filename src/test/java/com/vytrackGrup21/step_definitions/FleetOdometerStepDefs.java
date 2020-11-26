@@ -19,17 +19,16 @@ public class FleetOdometerStepDefs {
         Thread.sleep(3000);
         String DashboardActualTitle =  Driver.get().getTitle();
 
-        try{
-            Assert.assertEquals("Vehicle Odometer - Entities - System - Car - Entities - System",DashboardActualTitle);
-            System.out.println("I verifed driver");
-        }catch (Exception e){
+        if (DashboardActualTitle.equals("Dashboard")){
+
             Assert.assertTrue(!DashboardActualTitle.equals("\"Vehicle Odometer - Entities - System - Car - Entities - System\""));
             System.out.println("store manager did not access to odometer page");
 
+        }else if (! DashboardActualTitle.equals("Dashboard"))
 
-        }
-
-
+            Assert.assertEquals("Vehicle Odometer - Entities - System - Car - Entities - System",DashboardActualTitle);
+            System.out.println("I verifed driver");
+            Assert.assertEquals("You do not have permission to perform this action.",dashboard.NotPermission.getText());
     }
 
 
