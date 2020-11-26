@@ -83,6 +83,11 @@ public class Dashboard extends BasePage{
   @FindBy (xpath = "//tr[@class='grid-header-row']/th/a/span[@class='grid-header-cell__label']")
   public List<WebElement> CostTitles;
 
+    @FindBy(xpath = "//table//tr//th")
+    public List<WebElement> CostTitle1;
+
+    @FindBy(xpath = "//tbody/tr[4]/td")
+    public List<WebElement> fourthLine;
 
 
 
