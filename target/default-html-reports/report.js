@@ -2,17 +2,17 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "As an authorized user I should be access to Vehicle odometer page.",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@Sc0"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "As a \u003cuserType\u003e should be able to login",
+  "name": "As a\u003cuserType\u003e should be able to access",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Sc4"
+    }
+  ]
 });
 formatter.step({
   "name": "user on the login page",
@@ -24,6 +24,10 @@ formatter.step({
 });
 formatter.step({
   "name": "the user should be able to login \"Dashboard\" page",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Only valid userType  can access to vehicle odometer page",
   "keyword": "Then "
 });
 formatter.examples({
@@ -54,23 +58,18 @@ formatter.examples({
     }
   ]
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
 formatter.scenario({
-  "name": "As a driver should be able to login",
+  "name": "As adriver should be able to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sc0"
+      "name": "@Sc4"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user on the login page",
@@ -80,7 +79,7 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "\"driver\" login with valid \"user169\" and \"UserUser123\"",
@@ -90,7 +89,7 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.login_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user should be able to login \"Dashboard\" page",
@@ -100,28 +99,34 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.the_user_should_be_able_to_login_page(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "Only valid userType  can access to vehicle odometer page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page()"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "As a store_manager should be able to login",
+  "name": "As astore_manager should be able to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Sc0"
+      "name": "@Sc4"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user on the login page",
@@ -131,7 +136,7 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "\"store_manager\" login with valid \"storemanager213\" and \"UserUser123\"",
@@ -141,7 +146,7 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.login_with_valid_and(java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user should be able to login \"Dashboard\" page",
@@ -151,109 +156,20 @@ formatter.match({
   "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.the_user_should_be_able_to_login_page(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenarioOutline({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sc4"
-    }
-  ]
+  "status": "passed"
 });
 formatter.step({
-  "name": "Only valid \"\u003cuserType\u003e\" can access to vehicle odometer page",
-  "keyword": "When "
+  "name": "Only valid userType  can access to vehicle odometer page",
+  "keyword": "Then "
 });
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "userType"
-      ]
-    },
-    {
-      "cells": [
-        "driver"
-      ]
-    },
-    {
-      "cells": [
-        "store manager"
-      ]
-    }
-  ]
+formatter.match({
+  "location": "com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page()"
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sc0"
-    },
-    {
-      "name": "@Sc4"
-    }
-  ]
-});
-formatter.step({
-  "name": "Only valid \"driver\" can access to vehicle odometer page",
-  "keyword": "When "
-});
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Sc0"
-    },
-    {
-      "name": "@Sc4"
-    }
-  ]
-});
-formatter.step({
-  "name": "Only valid \"store manager\" can access to vehicle odometer page",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

@@ -1,16 +1,20 @@
 package com.vytrackGrup21.step_definitions;
 
 import com.vytrackGrup21.pages.Dashboard;
+import com.vytrackGrup21.utilities.BrowserUtils;
 import com.vytrackGrup21.utilities.Driver;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 public class FleetOdometerStepDefs {
 
-    @When("Only valid {string} can access to vehicle odometer page")
-    public void only_valid_can_access_to_vehicle_odometer_page(String string) {
+
+
+    @Then("Only valid userType  can access to vehicle odometer page")
+    public void only_valid_userType_can_access_to_vehicle_odometer_page() {
 
         Dashboard dashboard = new Dashboard();
+        BrowserUtils.waitFor(8);
         dashboard.navigateToModule("Fleet","Vehicle Odometer");
 
         String DashboardActualTitle =  Driver.get().getTitle();
@@ -29,6 +33,9 @@ public class FleetOdometerStepDefs {
 
 
 
+
+
     }
+
 
 }

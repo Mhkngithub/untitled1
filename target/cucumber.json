@@ -1,36 +1,29 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-26T08:58:48.864Z",
+        "start_timestamp": "2020-11-26T09:54:12.438Z",
         "before": [
           {
             "result": {
-              "duration": 2000800,
-              "status": "skipped"
+              "duration": 2000200,
+              "status": "passed"
             },
             "match": {
               "location": "com.vytrackGrup21.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 13,
-        "name": "As a driver should be able to login",
+        "line": 12,
+        "name": "As adriver should be able to access",
         "description": "",
-        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;as-a-\u003cusertype\u003e-should-be-able-to-login;;2",
+        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;as-a\u003cusertype\u003e-should-be-able-to-access;;2",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 918119500,
+              "status": "passed"
             },
             "match": {
               "location": "com.vytrackGrup21.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -42,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2999400,
-              "status": "skipped"
+              "duration": 6315234600,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user on the login page",
             "match": {
               "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
@@ -54,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 999900,
-              "status": "skipped"
+              "duration": 28270438200,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "\"driver\" login with valid \"user169\" and \"UserUser123\"",
             "match": {
               "arguments": [
@@ -80,10 +73,10 @@
           },
           {
             "result": {
-              "duration": 1000800,
-              "status": "skipped"
+              "duration": 1028876400,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "the user should be able to login \"Dashboard\" page",
             "match": {
               "arguments": [
@@ -95,42 +88,49 @@
               "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.the_user_should_be_able_to_login_page(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+              "duration": 8841167900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Only valid userType  can access to vehicle odometer page",
+            "match": {
+              "location": "com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Sc0"
+            "name": "@Sc4"
           }
         ]
       },
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-26T08:58:49.028Z",
+        "start_timestamp": "2020-11-26T09:54:57.950Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 997800,
+              "status": "passed"
             },
             "match": {
               "location": "com.vytrackGrup21.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 14,
-        "name": "As a store_manager should be able to login",
+        "line": 13,
+        "name": "As astore_manager should be able to access",
         "description": "",
-        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;as-a-\u003cusertype\u003e-should-be-able-to-login;;3",
+        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;as-a\u003cusertype\u003e-should-be-able-to-access;;3",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 796443900,
+              "status": "passed"
             },
             "match": {
               "location": "com.vytrackGrup21.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -142,10 +142,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2002300,
-              "status": "skipped"
+              "duration": 5556342000,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user on the login page",
             "match": {
               "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.user_on_the_login_page()"
@@ -154,10 +154,10 @@
           },
           {
             "result": {
-              "duration": 998200,
-              "status": "skipped"
+              "duration": 15226849800,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "\"store_manager\" login with valid \"storemanager213\" and \"UserUser123\"",
             "match": {
               "arguments": [
@@ -180,9 +180,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1010095500,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "the user should be able to login \"Dashboard\" page",
             "match": {
               "arguments": [
@@ -194,121 +195,22 @@
               "location": "com.vytrackGrup21.step_definitions.loginPageStepDefs.the_user_should_be_able_to_login_page(java.lang.String)"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sc0"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-26T08:58:49.129Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.vytrackGrup21.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "",
-        "description": "",
-        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;;;2",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.vytrackGrup21.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "Only valid \"driver\" can access to vehicle odometer page",
-            "match": {},
-            "keyword": "When "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sc0"
           },
           {
-            "name": "@Sc4"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-26T08:58:49.183Z",
-        "before": [
-          {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Vehicle Odometer - Entities - System - Car - Entities - System]\u003e but was:\u003c[Dashboard]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page(FleetOdometerStepDefs.java:23)\r\n\tat ✽.Only valid userType  can access to vehicle odometer page(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetOdometer.feature:9)\r\n",
+              "duration": 15247952000,
+              "status": "failed"
             },
+            "line": 9,
+            "name": "Only valid userType  can access to vehicle odometer page",
             "match": {
-              "location": "com.vytrackGrup21.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "",
-        "description": "",
-        "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.;;;3",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
+              "location": "com.vytrackGrup21.step_definitions.FleetOdometerStepDefs.only_valid_userType_can_access_to_vehicle_odometer_page()"
             },
-            "match": {
-              "location": "com.vytrackGrup21.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "Only valid \"store manager\" can access to vehicle odometer page",
-            "match": {},
-            "keyword": "When "
+            "keyword": "Then "
           }
         ],
         "tags": [
-          {
-            "name": "@Sc0"
-          },
           {
             "name": "@Sc4"
           }
@@ -320,15 +222,6 @@
     "id": "as-an-authorized-user-i-should-be-access-to-vehicle-odometer-page.",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/FleetOdometer.feature",
-    "tags": [
-      {
-        "name": "@Sc0",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]
