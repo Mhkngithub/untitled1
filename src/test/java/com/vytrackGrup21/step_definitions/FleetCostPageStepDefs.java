@@ -45,9 +45,6 @@ public class FleetCostPageStepDefs {
 
         Dashboard dashboard = new Dashboard();
 
-        dashboard.navigateToModule("Fleet","Vehicle Costs");
-        BrowserUtils.waitForPageToLoad(10);
-        BrowserUtils.waitFor(5);
 
         List<String> ActulFourthLine = BrowserUtils.getElementsText(dashboard.fourthLine);
         System.out.println("actual : " +ActulFourthLine.size());

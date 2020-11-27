@@ -15,7 +15,8 @@ Feature: As a truck driver I should be able to access Vehicle Costs page
       | DATE        |
 
     Then fourth line should include these informations
-      | TYPE        | Depreciation and Interests |
-      | TOTAL PRICE | $25.00                     |
-      | DATE        | Jun 3, 2020                |
+      | Depreciation and Interests |
+      | $25.00                     |
+      | Jun 3, 2020                |
+      | ...                        |
     And user should invoke page informations
