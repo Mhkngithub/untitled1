@@ -70,15 +70,17 @@ ActualTitleList.remove(3);
 
 
        int columnNumber = dashboard.CostTitles.size();
-
-       int rowNumber = Driver.get().findElements(By.xpath("//tbody/tr")).size();
+        System.out.println("column:" +columnNumber) ;
+        int rowNumber = Driver.get().findElements(By.xpath("//tbody/tr")).size();
+        System.out.println("row:"+ rowNumber);
 
         for (int i = 1; i <= rowNumber; i++) {
             for (int j = 1; j<=columnNumber; j++) {
 
                 WebElement cell1 = Driver.get().findElement(By.xpath( "//tbody/tr["+i+"]/td["+j+"]"));
+                System.out.print(cell1);
             }
-
+            System.out.println();
         }
 
 
