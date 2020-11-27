@@ -73,10 +73,10 @@ ActualTitleList.remove(3);
 
        int rowNumber = Driver.get().findElements(By.xpath("//tbody/tr")).size();
 
-        for (int i = 0; i < rowNumber; i++) {
-            for (int j = 0; j<columnNumber; j++) {
-                String cell= "//tbody/tr["+i+"]/td["+j+"]";
-                WebElement cell1 = Driver.get().findElement(By.xpath(cell));
+        for (int i = 1; i <= rowNumber; i++) {
+            for (int j = 1; j<=columnNumber; j++) {
+
+                WebElement cell1 = Driver.get().findElement(By.xpath( "//tbody/tr["+i+"]/td["+j+"]"));
             }
 
         }
