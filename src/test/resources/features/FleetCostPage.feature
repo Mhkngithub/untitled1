@@ -14,6 +14,7 @@ Feature: As a truck driver I should be able to access Vehicle Costs page
       | TOTAL PRICE |
       | DATE        |
 
+
     Then fourth line should include these informations
       | Depreciation and Interests |
       | $25.00                     |

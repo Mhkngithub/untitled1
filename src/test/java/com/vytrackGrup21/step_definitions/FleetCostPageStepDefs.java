@@ -19,7 +19,7 @@ public class FleetCostPageStepDefs {
 
         BrowserUtils.waitForPageToLoad(8);
 
-        List<String> ActualTitleList =  BrowserUtils.getElementsText(dashboard.CostTitle1);
+        List<String> ActualTitleList =  BrowserUtils.getElementsText(dashboard.CostTitles);
 
 
      /*   int a= ActualTitleList.size();
@@ -30,9 +30,11 @@ public class FleetCostPageStepDefs {
 
         }
 */
-//ActualTitleList.remove(5);
-//ActualTitleList.remove(4);
-//ActualTitleList.remove(3);
+
+ActualTitleList.remove(5);
+ActualTitleList.remove(4);
+ActualTitleList.remove(3);
+
         System.out.println("Expected List:"+ ExpectedCostTitle);
         System.out.println("Actual List:"+ ActualTitleList);
         Assert.assertEquals(ExpectedCostTitle.toString().toLowerCase(),ActualTitleList.toString().toLowerCase());
@@ -47,14 +49,13 @@ public class FleetCostPageStepDefs {
 
 
         List<String> ActulFourthLine = BrowserUtils.getElementsText(dashboard.fourthLine);
+
+
         System.out.println("actual : " +ActulFourthLine.size());
         System.out.println("actual: "+ ActulFourthLine.toString());
         System.out.println("expected:"+ ExpectedFourthLine);
 
         Assert.assertEquals(ExpectedFourthLine,ActulFourthLine);
-
-
-
 
     }
 
