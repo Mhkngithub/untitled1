@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6637698900,
+              "duration": 6120118500,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 6515155800,
+              "duration": 13439180100,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 24001200,
+              "duration": 20016600,
               "status": "passed"
             },
             "line": 7,
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-27T09:29:48.024Z",
+        "start_timestamp": "2020-11-27T10:02:07.599Z",
         "before": [
           {
             "result": {
-              "duration": 1999400,
+              "duration": 1001200,
               "status": "passed"
             },
             "match": {
@@ -67,7 +67,7 @@
         "after": [
           {
             "result": {
-              "duration": 824848500,
+              "duration": 802749000,
               "status": "passed"
             },
             "match": {
@@ -80,8 +80,9 @@
         "steps": [
           {
             "result": {
-              "duration": 20424699600,
-              "status": "passed"
+              "error_message": "java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 3\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\r\n\tat java.base/java.util.Objects.checkIndex(Objects.java:373)\r\n\tat java.base/java.util.ArrayList.remove(ArrayList.java:504)\r\n\tat com.vytrackGrup21.step_definitions.FleetCostPageStepDefs.log_in_page_titles_must_be_seen(FleetCostPageStepDefs.java:37)\r\n\tat ✽.\"driver\" log in page titles must be seen(file:///C:/Users/greec/untitled1/src/test/resources/features/FleetCostPage.feature:12)\r\n",
+              "duration": 20416038800,
+              "status": "failed"
             },
             "line": 12,
             "name": "\"driver\" log in page titles must be seen",
@@ -115,8 +116,8 @@
           },
           {
             "result": {
-              "duration": 128008800,
-              "status": "passed"
+              "duration": 999400,
+              "status": "skipped"
             },
             "line": 18,
             "name": "fourth line should include these informations",
@@ -149,8 +150,7 @@
           },
           {
             "result": {
-              "duration": 998700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "user should invoke page informations",

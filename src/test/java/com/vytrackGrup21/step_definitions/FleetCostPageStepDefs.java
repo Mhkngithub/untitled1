@@ -2,9 +2,12 @@ package com.vytrackGrup21.step_definitions;
 
 import com.vytrackGrup21.pages.Dashboard;
 import com.vytrackGrup21.utilities.BrowserUtils;
+import com.vytrackGrup21.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
@@ -61,6 +64,24 @@ ActualTitleList.remove(3);
 
     @Then("user should invoke page informations")
     public void user_should_invoke_page_informations() {
+
+
+        Dashboard dashboard = new Dashboard();
+
+
+       int columnNumber = dashboard.CostTitles.size();
+
+       int rowNumber = Driver.get().findElements(By.xpath("//tbody/tr")).size();
+
+        for (int i = 0; i < rowNumber; i++) {
+            for (int j = 0; j<columnNumber; j++) {
+                String cell= "//tbody/tr["+i+"]/td["+j+"]";
+                WebElement cell1 = Driver.get().findElement(By.xpath(cell));
+            }
+
+        }
+
+
 
     }
 
